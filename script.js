@@ -1,9 +1,10 @@
-// تهيئة مكتبة التحريك AOS
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function () {
     AOS.init({
         duration: 1000,
-        once: false,
-        offset: 100
+        once: true,
+        offset: 50,
+        // هقفل الأنميشن في الموبايل عشان نضمن إن المحتوى يظهر وميختفيش
+        disable: window.innerWidth < 768
     });
 });
 
@@ -26,7 +27,7 @@ const navLinks = document.getElementById('nav-links');
 menuToggle.addEventListener('click', () => {
     navLinks.classList.toggle('active-mobile');
     // إضافة ستايل بسيط لإظهار القائمة في الموبايل
-    if(navLinks.classList.contains('active-mobile')) {
+    if (navLinks.classList.contains('active-mobile')) {
         navLinks.style.display = 'flex';
         navLinks.style.flexDirection = 'column';
         navLinks.style.position = 'absolute';
@@ -44,7 +45,7 @@ menuToggle.addEventListener('click', () => {
 // إغلاق القائمة عند الضغط على رابط
 document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', () => {
-        if(window.innerWidth <= 768) {
+        if (window.innerWidth <= 768) {
             navLinks.style.display = 'none';
             navLinks.classList.remove('active-mobile');
         }
