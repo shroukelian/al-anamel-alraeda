@@ -3,12 +3,10 @@ document.addEventListener('DOMContentLoaded', function () {
         duration: 1000,
         once: true,
         offset: 50,
-        // هقفل الأنميشن في الموبايل عشان نضمن إن المحتوى يظهر وميختفيش
         disable: window.innerWidth < 768
     });
 });
 
-// تغيير شكل الهيدر عند التمرير
 window.addEventListener('scroll', () => {
     const navbar = document.getElementById('navbar');
     if (window.scrollY > 50) {
@@ -20,13 +18,11 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// قائمة الموبايل (Hamburger Menu)
 const menuToggle = document.getElementById('mobile-menu');
 const navLinks = document.getElementById('nav-links');
 
 menuToggle.addEventListener('click', () => {
     navLinks.classList.toggle('active-mobile');
-    // إضافة ستايل بسيط لإظهار القائمة في الموبايل
     if (navLinks.classList.contains('active-mobile')) {
         navLinks.style.display = 'flex';
         navLinks.style.flexDirection = 'column';
@@ -42,7 +38,6 @@ menuToggle.addEventListener('click', () => {
     }
 });
 
-// إغلاق القائمة عند الضغط على رابط
 document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', () => {
         if (window.innerWidth <= 768) {
@@ -53,13 +48,11 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 });
 
 
-// لوجيك فلترة المشاريع
 const filterButtons = document.querySelectorAll('.f-btn');
 const projectCards = document.querySelectorAll('.project-card');
 
 filterButtons.forEach(btn => {
     btn.addEventListener('click', () => {
-        // تغيير الزرار النشط
         document.querySelector('.f-btn.active').classList.remove('active');
         btn.classList.add('active');
 
