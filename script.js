@@ -53,3 +53,26 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 });
 
 
+// لوجيك فلترة المشاريع
+const filterButtons = document.querySelectorAll('.f-btn');
+const projectCards = document.querySelectorAll('.project-card');
+
+filterButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+        // تغيير الزرار النشط
+        document.querySelector('.f-btn.active').classList.remove('active');
+        btn.classList.add('active');
+
+        const filterValue = btn.getAttribute('data-filter');
+
+        projectCards.forEach(card => {
+            if (filterValue === 'all' || card.classList.contains(filterValue)) {
+                card.classList.remove('hide');
+                card.classList.add('show');
+            } else {
+                card.classList.remove('show');
+                card.classList.add('hide');
+            }
+        });
+    });
+});

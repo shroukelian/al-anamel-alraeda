@@ -5,25 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>شركة الأنامل الرائدة الحديثة للمقاولات العامة | متخصصون في الأسفلت</title>
-    <!-- الخطوط -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
-    <!-- الأيقونات -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- مكتبة التحريك -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- الهيدر والتنقل -->
     <header class="navbar" id="navbar">
         <div class="container nav-container">
             <div class="logo">
-                <!-- أيقونة ترمز للمقاولات والبناء بجانب الاسم -->
                 <i class="fas fa-hard-hat logo-icon"></i>
                 <div class="logo-text">
-                    <span class="logo-bold">الأنامل الرائدة</span>
+                    <span class="logo-bold">الأنامل الرائدة الحديثة</span>
                     <span class="logo-light">للمقاولات العامة</span>
                 </div>
             </div>
@@ -42,7 +37,6 @@
         </div>
     </header>
 
-    <!-- قسم الواجهة (Hero) -->
     <section id="home" class="hero">
         <div class="hero-overlay"></div>
         <div class="container hero-content" data-aos="fade-up">
@@ -56,10 +50,8 @@
             </div>
         </div>
     </section>
-    <!-- قسم من نحن -->
     <section id="about" class="about">
         <div class="container about-grid">
-            <!-- الجانب النصي -->
             <div class="about-text" data-aos="fade-left">
                 <span class="sub-title">تعرف علينا</span>
                 <h2>شركة الأنامل الرائدة <br> <span class="highlight">مسيرة من الإتقان في تمهيد الطرق</span></h2>
@@ -152,18 +144,26 @@
         </div>
     </section>
 
-    <!-- قسم مشاريعنا المنفذة -->
+    <!-- قسم مشاريعنا المنفذة المطور -->
     <section id="projects" class="projects">
         <div class="container">
             <div class="section-header" data-aos="fade-down">
-                <h2>مشاريعنا المنفذة</h2>
+                <h2>سجل إنجازاتنا المنفذة</h2>
                 <div class="underline"></div>
-                <p>نفخر بالمساهمة في تطوير البنية التحتية وتمهيد الطرق بأعلى معايير الدقة</p>
+                <p>نفخر بالمساهمة في تطوير البنية التحتية وتمهيد الطرق بأعلى معايير الدقة في جدة</p>
+            </div>
+
+            <!-- أزرار الفلترة الذكية -->
+            <div class="filter-btns" data-aos="fade-up">
+                <button class="f-btn active" data-filter="all">كل المشاريع</button>
+                <button class="f-btn" data-filter="roads">سفلتة طرق</button>
+                <button class="f-btn" data-filter="residential">مخططات سكنية</button>
+                <button class="f-btn" data-filter="maintenance">صيانة وترميم</button>
             </div>
 
             <div class="projects-grid">
-                <!-- مشروع 1 -->
-                <div class="project-card" data-aos="zoom-in">
+                <!-- مشروع 1: سكني -->
+                <div class="project-card residential" data-aos="zoom-in">
                     <img src="images/photo3.png" alt="مشروع سفلتة">
                     <div class="project-overlay">
                         <div class="project-info">
@@ -173,8 +173,8 @@
                     </div>
                 </div>
 
-                <!-- مشروع 2 -->
-                <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
+                <!-- مشروع 2: طرق -->
+                <div class="project-card roads" data-aos="zoom-in" data-aos-delay="100">
                     <img src="images/photo4.webp" alt="تمهيد طرق">
                     <div class="project-overlay">
                         <div class="project-info">
@@ -184,8 +184,8 @@
                     </div>
                 </div>
 
-                <!-- مشروع 3 -->
-                <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
+                <!-- مشروع 3: صيانة -->
+                <div class="project-card maintenance" data-aos="zoom-in" data-aos-delay="200">
                     <img src="images/photo6.jpg" alt="صيانة أسفلت">
                     <div class="project-overlay">
                         <div class="project-info">
@@ -195,8 +195,8 @@
                     </div>
                 </div>
 
-                <!-- مشروع 4 -->
-                <div class="project-card" data-aos="zoom-in" data-aos-delay="300">
+                <!-- مشروع 4: طرق -->
+                <div class="project-card roads" data-aos="zoom-in" data-aos-delay="300">
                     <img src="images/photo5.jpeg" alt="ساحات صناعية">
                     <div class="project-overlay">
                         <div class="project-info">
@@ -206,8 +206,8 @@
                     </div>
                 </div>
 
-                <!-- مشروع 5 -->
-                <div class="project-card" data-aos="zoom-in" data-aos-delay="400">
+                <!-- مشروع 5: سكني -->
+                <div class="project-card residential" data-aos="zoom-in" data-aos-delay="400">
                     <img src="images/photo7.webp" alt="مواقف سيارات">
                     <div class="project-overlay">
                         <div class="project-info">
@@ -217,13 +217,81 @@
                     </div>
                 </div>
 
-                <!-- مشروع 6 -->
-                <div class="project-card" data-aos="zoom-in" data-aos-delay="500">
+                <!-- مشروع 6: طرق -->
+                <div class="project-card roads" data-aos="zoom-in" data-aos-delay="500">
                     <img src="images/photo8.webp" alt="بنية تحتية">
                     <div class="project-overlay">
                         <div class="project-info">
                             <h3>تطوير بنية تحتية</h3>
                             <span>مشاريع تطوير عقاري</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- مشروع إضافي 7 (يمكنك إضافة صور جديدة هنا) -->
+                <div class="project-card roads" data-aos="zoom-in">
+                    <img src="images/photo9.webp" alt="طرق">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h3>رصف الطرق السريعة</h3>
+                            <span>مداخل مدينة جدة</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- مشروع إضافي 8 -->
+                <div class="project-card maintenance" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="images/photo10.jpg" alt="صيانة">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h3>معالجة التشققات الأسفلتية</h3>
+                            <span>مشاريع الأمانة</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- مشروع 9: طرق (جديد) -->
+                <div class="project-card roads" data-aos="zoom-in">
+                    <img src="images/photo11.jpg" alt="طريق سريع">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h3>رصف الطرق السريعة</h3>
+                            <span>طريق جدة - مكة</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- مشروع 10: سكني (جديد) -->
+                <div class="project-card residential" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="images/photo12.png" alt="مجمع فلل">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h3>سفلتة مجمعات سكنية</h3>
+                            <span>حي أبحر الشمالية</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- مشروع 11: صيانة (جديد) -->
+                <div class="project-card maintenance" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="images/photo13.png"
+                        alt="صيانة دورية">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h3>تجديد طبقات الأسفلت</h3>
+                            <span>منطقة المستودعات</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- مشروع 12: طرق (جديد) -->
+                <div class="project-card roads" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="images/photo14.png"
+                        alt="تمهيد ساحات">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h3>تمهيد ساحات لوجستية</h3>
+                            <span>ميناء جدة الإسلامي</span>
                         </div>
                     </div>
                 </div>
@@ -331,7 +399,7 @@
                         <i class="fas fa-phone-alt"></i>
                         <div class="details">
                             <h4>رقم الهاتف</h4>
-                            <p dir="ltr"><a href="tel:0549555849">0549555849</a></p>
+                            <p dir="ltr"><a href="tel:0544217695">0544217695 </a></p>
                         </div>
                     </div>
 
@@ -339,7 +407,7 @@
                         <i class="fas fa-envelope"></i>
                         <div class="details">
                             <h4>البريد الإلكتروني</h4>
-                            <p>info@alanamil.com</p>
+                            <p>Abyad880@gmail.com</p>
                         </div>
                     </div>
 
@@ -353,7 +421,9 @@
                 <!-- الجزء الثاني: الخريطة التفاعلية -->
                 <div class="contact-map-box" data-aos="fade-right">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3711.23456789!2d39.1912345!3d21.543210!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d0123456789%3A0x1234567890abcdef!2z2K_ZiNin2LEg2KfZhNiv2LHYp9is2KnYjCDYvNiv2Kk!5e0!3m2!1sar!2ssa!4v1700000000000!5m2!1sar!2ssa"
+                        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3710.543618709164!2d39.18378067527149!3d21.564693480222147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjHCsDMzJzUyLjkiTiAzOcKwMTEnMTAuOSJF!5e0!3m2!1sen!2seg!4v1778012679698!5m2!1sen!2seg"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
                         width="100%" height="100%" style="border:0; border-radius: 15px;" allowfullscreen=""
                         loading="lazy">
                     </iframe>
@@ -396,8 +466,7 @@
             <div class="footer-col vision-col">
                 <h4>رؤية المملكة 2030</h4>
                 <div class="vision-logo-container">
-                    <img src="images/2030.jpg" alt="رؤية 2030 السعودية"
-                        class="vision-footer-img">
+                    <img src="images/2030.jpg" alt="رؤية 2030 السعودية" class="vision-footer-img">
                 </div>
             </div>
         </div>
@@ -412,8 +481,8 @@
 
     <!-- أزرار الاتصال العائمة -->
     <div class="floating-btns">
-        <a href="https://wa.me/966549555849" class="wa-btn" target="_blank"><i class="fab fa-whatsapp"></i></a>
-        <a href="tel:0549555849" class="call-btn" target="_blank"><i class="fas fa-phone"></i></a>
+        <a href="https://wa.me/966544217695" class="wa-btn" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="tel:0544217695" class="call-btn" target="_blank"><i class="fas fa-phone"></i></a>
     </div>
 
     <!-- البرامج النصية -->
